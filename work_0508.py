@@ -4,8 +4,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 ## -------------------------------------------------------------------------------------------------------
-df_a = pd.read_json(r'C:\Users\KDT54\Desktop\KDT_14\[3]STREAMLIT\data\heart_failure_a.json')
-df_b = pd.read_json(r'C:\Users\KDT54\Desktop\KDT_14\[3]STREAMLIT\data\heart_failure_b.json')
+df_a = pd.read_json(r'heart_failure_a.json')
+df_b = pd.read_json(r'heart_failure_b.json')
 df = pd.merge(df_a, df_b, on='person_id', how='inner')
 
 
